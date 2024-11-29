@@ -1,0 +1,22 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      img.city-section__icon(src="images/city-section-icon.svg" loading="lazy" width="704" height="546" alt="icon")
+      h2.city-section__title.font-s-50
+        span.font-w-regular
+          | Откройте магазин 
+          br.no-br
+          | парфюмерии 
+          br.no-br
+        span.font-w-bold.color-gold «ДУХИ ЗДЕСЬ» в вашем городе
+      .city-section__sub-title.font-s-30
+        span.font-w-r-medium и получайте от 265 000 рублей
+        br
+        | чистой прибыли ежемесячно
+      .city-section__text.font-s-18 Проверьте, свободен ли ваш город для работы
+      form.city-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Проверить
+      include ../components/footer.pug

@@ -1,0 +1,23 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      .main-section__sub-title.font-s-30
+        | Зарабатывайте 
+        br.no-br
+        span.font-w-r-medium от 265 000 ₽ ежемесячно
+      h1.main-section__title.font-w-regular.font-s-50
+        | открыв магазин 
+        br.no-br
+        | парфюмерии 
+        br.no-br
+        span.font-w-bold.color-gold
+          | по франшизе 
+          br.no-br
+          | «ДУХИ ЗДЕСЬ»
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Узнать условия
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1291" height="1024" alt="image")
